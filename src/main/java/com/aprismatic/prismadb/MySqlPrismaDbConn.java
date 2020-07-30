@@ -21,7 +21,7 @@ public class MySqlPrismaDbConn {
 
         try {
             Connection initConn = DriverManager.getConnection("jdbc:mysql://" + host + "/" + database, "init", "init");
-            Statement stmt = conn.createStatement();
+            Statement stmt = initConn.createStatement();
             stmt.executeQuery("PRISMADB REGISTER USER '" + username + "' PASSWORD '" + password + "'");
             initConn.close();
         } catch (SQLException ex) {

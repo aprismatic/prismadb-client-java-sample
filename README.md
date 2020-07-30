@@ -1,4 +1,4 @@
-# PrismaDB-Java-Client-Sample
+# PrismaDB-Client-Java-Sample
 A sample client for Prisma/DB Proxy written in Java
 
 ## Setup
